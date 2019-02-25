@@ -19,5 +19,6 @@ public interface CmsPageRepository extends MongoRepository<CmsPage, String> {
 
     Page<CmsPage> findBySiteIdAndPageType(String siteId, String pageType, Pageable pageable);
 
+    CmsPage findByPageNameAndSiteIdAndPageWebPath(String pageName,String siteId,String pageWebPath);
 
 }

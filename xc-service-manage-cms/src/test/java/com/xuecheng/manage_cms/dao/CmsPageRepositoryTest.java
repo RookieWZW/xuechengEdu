@@ -5,9 +5,7 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.data.domain.Page;
-import org.springframework.data.domain.PageRequest;
-import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.*;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import static org.junit.Assert.*;
@@ -23,13 +21,35 @@ public class CmsPageRepositoryTest {
     private CmsPageRepository cmsPageRepository;
 
     @Test
-    public void testFindPage(){
+    public void testFindPage() {
         int page = 0;
         int size = 10;
-        Pageable pageable = PageRequest.of(page,size);
-        Page<CmsPage> all  = cmsPageRepository.findAll(pageable);
+        Pageable pageable = PageRequest.of(page, size);
+        Page<CmsPage> all = cmsPageRepository.findAll(pageable);
 
         System.out.println(all);
+    }
+
+    @Test
+    public void testFindAll() {
+        ExampleMatcher exampleMatcher = ExampleMatcher.matching();
+
+        exampleMatcher = exampleMatcher.withMatcher("pageAlise",
+                ExampleMatcher.GenericPropertyMatchers.contains());
+
+        CmsPage cmsPage = new CmsPage();
+
+        cmsPage.setSiteId("5a751fab6abb5044e0d19ea1");
+
+        cmsPage.setTemplateId("5a962c16b00ffc514038fafd");
+
+        Example<CmsPage> example = Example.of(cmsPage, exampleMatcher);
+
+        Pageable pageable = PageRequest.of(0,10);
+
+        Page<CmsPage> all = cmsPageRepository.findAll(example, pageable);
+
+        System.out.println("___________________" + all);
     }
 
 }
