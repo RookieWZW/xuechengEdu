@@ -7,8 +7,9 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 /**
- * Created by RookieWangZhiWei on 2019/2/26.
- */
+ * @author Administrator
+ * @version 1.0
+ **/
 @Configuration
 public class RabbitmqConfig {
 
@@ -22,7 +23,10 @@ public class RabbitmqConfig {
     //routingKey 即站点Id
     @Value("${xuecheng.mq.routingKey}")
     public  String routingKey;
-
+    /**
+     * 交换机配置使用direct类型
+     * @return the exchange
+     */
     @Bean(EX_ROUTING_CMS_POSTPAGE)
     public Exchange EXCHANGE_TOPICS_INFORM() {
         return ExchangeBuilder.directExchange(EX_ROUTING_CMS_POSTPAGE).durable(true).build();
@@ -34,8 +38,16 @@ public class RabbitmqConfig {
         return queue;
     }
 
-    public Binding BINDING_QUEUE_INFORM_SMS(@Qualifier(QUEUE_CMS_POSTPAGE) Queue queue,
-                                            @Qualifier(EX_ROUTING_CMS_POSTPAGE) Exchange exchange) {
+    /**
+     * 绑定队列到交换机
+     *
+     * @param queue    the queue
+     * @param exchange the exchange
+     * @return the binding
+     */
+    @Bean
+    public Binding BINDING_QUEUE_INFORM_SMS(@Qualifier(QUEUE_CMS_POSTPAGE) Queue queue, @Qualifier(EX_ROUTING_CMS_POSTPAGE) Exchange exchange) {
         return BindingBuilder.bind(queue).to(exchange).with(routingKey).noargs();
     }
+
 }

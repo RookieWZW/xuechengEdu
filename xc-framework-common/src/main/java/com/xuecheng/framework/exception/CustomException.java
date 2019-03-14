@@ -3,20 +3,22 @@ package com.xuecheng.framework.exception;
 import com.xuecheng.framework.model.response.ResultCode;
 
 /**
- * Created by RookieWangZhiWei on 2019/2/24.
- */
+ * 自定义异常类型
+ * @author Administrator
+ * @version 1.0
+ * @create 2018-09-14 17:28
+ **/
 public class CustomException extends RuntimeException {
 
+    //错误代码
+    ResultCode resultCode;
 
-    private ResultCode resultCode;
-
-    public CustomException(ResultCode resultCode) {
-        super("错误代码：" + resultCode.code() + "错误信息 : " + resultCode.message());
-
+    public CustomException(ResultCode resultCode){
         this.resultCode = resultCode;
     }
-
-    public ResultCode getResultCode() {
-        return this.resultCode;
+    public ResultCode getResultCode(){
+        return resultCode;
     }
+
+
 }

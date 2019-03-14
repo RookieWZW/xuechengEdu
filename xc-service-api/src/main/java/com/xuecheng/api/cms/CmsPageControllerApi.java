@@ -10,37 +10,31 @@ import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiImplicitParams;
 import io.swagger.annotations.ApiOperation;
 
-/**
- * Created by RookieWangZhiWei on 2019/2/20.
- */
-@Api(value = "cms页面管理接口", description = "cms页面管理接口，提供页面的增删改查")
+@Api(value="cms页面管理接口",description = "cms页面管理接口，提供页面的增、删、改、查")
 public interface CmsPageControllerApi {
-
+    //页面查询
     @ApiOperation("分页查询页面列表")
     @ApiImplicitParams({
-            @ApiImplicitParam(name = "page", value = "页面", required = true, paramType = "path", dataType = "int"),
-            @ApiImplicitParam(name = "size", value = "每页记录数", required = true, paramType = "path", dataType = "int")
+            @ApiImplicitParam(name="page",value = "页码",required=true,paramType="path",dataType="int"),
+            @ApiImplicitParam(name="size",value = "每页记录数",required=true,paramType="path",dataType="int")
     })
     public QueryResponseResult findList(int page, int size, QueryPageRequest queryPageRequest);
-
-
-    @ApiOperation("添加页面")
+    //新增页面
+    @ApiOperation("新增页面")
     public CmsPageResult add(CmsPage cmsPage);
 
-
-    @ApiOperation("通过ID查询页面")
+    //根据页面id查询页面信息
+    @ApiOperation("根据页面id查询页面信息")
     public CmsPage findById(String id);
-
-
+    //修改页面
     @ApiOperation("修改页面")
-    public CmsPageResult edit(String id, CmsPage cmsPage);
+    public CmsPageResult edit(String id,CmsPage cmsPage);
 
-
-    @ApiOperation("通过id删除页面")
+    //删除页面
+    @ApiOperation("删除页面")
     public ResponseResult delete(String id);
 
-
-    @ApiOperation("发布页面")
+    //页面发布
+    @ApiOperation("页面发布")
     public ResponseResult post(String pageId);
-
 }

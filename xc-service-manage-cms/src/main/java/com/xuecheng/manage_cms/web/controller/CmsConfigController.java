@@ -19,9 +19,11 @@ public class CmsConfigController implements CmsConfigControllerApi {
     @Autowired
     private CmsConfigService cmsConfigService;
 
+
+
     @Override
     @GetMapping("/getmodel/{id}")
-    public CmsConfig getModel(@PathVariable("id") String id) {
+    public CmsConfig getmodel(@PathVariable("id")String id) {
         return cmsConfigService.getConfigById(id);
     }
 }
