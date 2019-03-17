@@ -7,7 +7,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 /**
- * @author Administrator
+ * @author RookieWZW
  * @version 1.0
  **/
 @Configuration

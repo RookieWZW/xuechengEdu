@@ -12,10 +12,8 @@ import org.springframework.stereotype.Component;
 import java.util.Map;
 
 /**
- * 监听MQ，接收页面发布消息
- * @author Administrator
- * @version 1.0
- **/
+ * Created by RookieWangZhiWei on 2019/3/17.
+ */
 @Component
 public class ConsumerPostPage {
 

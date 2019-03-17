@@ -22,19 +22,19 @@ public class CmsPagePreviewController extends BaseController {
     private PageService pageService;
 
 
-//    @RequestMapping(value = "/cms/preview/{pageId}", method = RequestMethod.GET)
-//    public void preview(@PathVariable("pageId") String pageId) {
-//
-//        String pageHtml = pageService.getPageHtml(pageId);
-//
-//        if (StringUtils.isNotEmpty(pageHtml)) {
-//            try {
-//                ServletOutputStream outputStream = response.getOutputStream();
-//                outputStream.write(pageHtml.getBytes("utf-8"));
-//
-//            } catch (IOException e) {
-//                e.printStackTrace();
-//            }
-//        }
-//    }
+    @RequestMapping(value = "/cms/preview/{pageId}", method = RequestMethod.GET)
+    public void preview(@PathVariable("pageId") String pageId) {
+
+        String pageHtml = pageService.getPageHtml(pageId);
+
+        if (StringUtils.isNotEmpty(pageHtml)) {
+            try {
+                ServletOutputStream outputStream = response.getOutputStream();
+                outputStream.write(pageHtml.getBytes("utf-8"));
+
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+    }
 }

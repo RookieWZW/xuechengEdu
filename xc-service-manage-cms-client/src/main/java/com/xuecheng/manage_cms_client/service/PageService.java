@@ -21,12 +21,10 @@ import java.io.*;
 import java.util.Optional;
 
 /**
- * @author Administrator
- * @version 1.0
- **/
+ * Created by RookieWangZhiWei on 2019/3/17.
+ */
 @Service
 public class PageService {
-
 
 
     @Autowired
@@ -41,35 +39,36 @@ public class PageService {
     @Autowired
     CmsSiteRepository cmsSiteRepository;
 
-    //保存html页面到服务器物理路径
-    public void savePageToServerPath(String pageId){
-        //根据pageId查询cmsPage
+
+    public void savePageToServerPath(String pageId) {
         CmsPage cmsPage = this.findCmsPageById(pageId);
-        //得到html的文件id，从cmsPage中获取htmlFileId内容
+
         String htmlFileId = cmsPage.getHtmlFileId();
 
-        //从gridFS中查询html文件
         InputStream inputStream = this.getFileById(htmlFileId);
-        if(inputStream == null){
+        if (inputStream == null) {
 
-            return ;
+            return;
         }
-        //得到站点id
+
         String siteId = cmsPage.getSiteId();
-        //得到站点的信息
+
         CmsSite cmsSite = this.findCmsSiteById(siteId);
-        //得到站点的物理路径
+
+
         String sitePhysicalPath = cmsSite.getSitePhysicalPath();
-        //得到页面的物理路径
-        String pagePath = sitePhysicalPath + cmsPage.getPagePhysicalPath() + cmsPage.getPageName();
-        //将html文件保存到服务器物理路径上
+
+
+        String pagePath = sitePhysicalPath + cmsPage.getPagePhysicalPath();
+
         FileOutputStream fileOutputStream = null;
+
         try {
             fileOutputStream = new FileOutputStream(new File(pagePath));
-            IOUtils.copy(inputStream,fileOutputStream);
+            IOUtils.copy(inputStream, fileOutputStream);
         } catch (Exception e) {
             e.printStackTrace();
-        }finally {
+        } finally {
             try {
                 inputStream.close();
             } catch (IOException e) {
@@ -81,18 +80,15 @@ public class PageService {
                 e.printStackTrace();
             }
         }
-
-
     }
 
-    //根据文件id从GridFS中查询文件内容
-    public InputStream getFileById(String fileId){
+    public InputStream getFileById(String fileId) {
         //文件对象
         GridFSFile gridFSFile = gridFsTemplate.findOne(Query.query(Criteria.where("_id").is(fileId)));
         //打开下载流
         GridFSDownloadStream gridFSDownloadStream = gridFSBucket.openDownloadStream(gridFSFile.getObjectId());
         //定义GridFsResource
-        GridFsResource gridFsResource = new GridFsResource(gridFSFile,gridFSDownloadStream);
+        GridFsResource gridFsResource = new GridFsResource(gridFSFile, gridFSDownloadStream);
         try {
             return gridFsResource.getInputStream();
         } catch (IOException e) {
@@ -101,18 +97,18 @@ public class PageService {
         return null;
     }
 
-    //根据页面id查询页面信息
-    public CmsPage findCmsPageById(String pageId){
+    public CmsPage findCmsPageById(String pageId) {
         Optional<CmsPage> optional = cmsPageRepository.findById(pageId);
-        if(optional.isPresent()){
+
+        if (optional.isPresent()) {
             return optional.get();
         }
         return null;
     }
-    //根据站点id查询站点信息
-    public CmsSite findCmsSiteById(String siteId){
+
+    public CmsSite findCmsSiteById(String siteId) {
         Optional<CmsSite> optional = cmsSiteRepository.findById(siteId);
-        if(optional.isPresent()){
+        if (optional.isPresent()) {
             return optional.get();
         }
         return null;
