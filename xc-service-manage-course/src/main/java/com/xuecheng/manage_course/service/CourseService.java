@@ -4,6 +4,7 @@ import com.github.pagehelper.Page;
 import com.github.pagehelper.PageHelper;
 import com.xuecheng.framework.domain.course.CourseBase;
 import com.xuecheng.framework.domain.course.CourseMarket;
+import com.xuecheng.framework.domain.course.CoursePic;
 import com.xuecheng.framework.domain.course.Teachplan;
 import com.xuecheng.framework.domain.course.ext.CourseInfo;
 import com.xuecheng.framework.domain.course.ext.TeachplanNode;
@@ -45,6 +46,10 @@ public class CourseService {
 
     @Autowired
     private CourseMapper courseMapper;
+
+    @Autowired
+    CoursePicRepository coursePicRepository;
+
 
     //查询课程计划
     public TeachplanNode findTeachplanList(String courseId) {
@@ -204,5 +209,40 @@ public class CourseService {
         }
 
         return one;
+    }
+
+    @Transactional
+    public ResponseResult saveCoursePic(String courseId, String pic) {
+
+        Optional<CoursePic> optional = coursePicRepository.findById(courseId);
+
+        CoursePic coursePic = null;
+        if (optional.isPresent()) {
+            coursePic = optional.get();
+        }
+
+        if (coursePic == null) {
+            coursePic = new CoursePic();
+        }
+        coursePic.setCourseid(courseId);
+        coursePic.setPic(pic);
+
+        coursePicRepository.save(coursePic);
+        return new ResponseResult(CommonCode.SUCCESS);
+    }
+
+
+    public CoursePic findCoursepic(String courseId) {
+        return coursePicRepository.findById(courseId).get();
+    }
+
+    @Transactional
+    public ResponseResult deleteCoursePic(String courseId){
+        long result = coursePicRepository.deleteByCourseid(courseId);
+
+        if (result>0){
+            return new ResponseResult(CommonCode.SUCCESS);
+        }
+        return new ResponseResult(CommonCode.FAIL);
     }
 }
