@@ -276,48 +276,49 @@ public class PageService {
 
         return body;
     }
-    public ResponseResult postPage(String pageId){
+
+    public ResponseResult postPage(String pageId) {
         String pageHtml = this.getPageHtml(pageId);
 
-        if(StringUtils.isEmpty(pageHtml)){
+        if (StringUtils.isEmpty(pageHtml)) {
             ExceptionCast.cast(CmsCode.CMS_GENERATEHTML_HTMLISNULL);
         }
 
-        CmsPage cmsPage = saveHtml(pageId,pageHtml);
+        CmsPage cmsPage = saveHtml(pageId, pageHtml);
 
         sendPostPage(pageId);
 
         return new ResponseResult(CommonCode.SUCCESS);
     }
 
-    private void sendPostPage(String pageId){
+    private void sendPostPage(String pageId) {
         CmsPage cmsPage = this.getById(pageId);
 
-        if(cmsPage == null){
+        if (cmsPage == null) {
             ExceptionCast.cast(CmsCode.CMS_PAGE_NOTEXISTS);
         }
 
-        Map<String,String> msgMap = new HashMap<>();
+        Map<String, String> msgMap = new HashMap<>();
 
-        msgMap.put("pageId",pageId);
+        msgMap.put("pageId", pageId);
 
         String msg = JSON.toJSONString(msgMap);
 
         String siteId = cmsPage.getSiteId();
 
-        this.rabbitTemplate.convertAndSend(RabbitmqConfig.EX_ROUTING_CMS_POSTPAGE,siteId, msg);
+        this.rabbitTemplate.convertAndSend(RabbitmqConfig.EX_ROUTING_CMS_POSTPAGE, siteId, msg);
     }
 
 
-    private CmsPage saveHtml(String pageId,String content){
+    private CmsPage saveHtml(String pageId, String content) {
         Optional<CmsPage> optional = cmsPageRepository.findById(pageId);
-        if(!optional.isPresent()){
+        if (!optional.isPresent()) {
             ExceptionCast.cast(CmsCode.CMS_PAGE_NOTEXISTS);
         }
         CmsPage cmsPage = optional.get();
 
         String htmlFileId = cmsPage.getHtmlFileId();
-        if(StringUtils.isNotEmpty(htmlFileId)){
+        if (StringUtils.isNotEmpty(htmlFileId)) {
             gridFsTemplate.delete(Query.query(Criteria.where("_id").is(htmlFileId)));
         }
         InputStream inputStream = IOUtils.toInputStream(content);
@@ -331,4 +332,15 @@ public class PageService {
 
     }
 
+    public CmsPageResult save(CmsPage cmsPage) {
+        CmsPage cmsPage1 = cmsPageRepository.findByPageNameAndSiteIdAndPageWebPath(cmsPage.getPageName(), cmsPage.getSiteId(), cmsPage.getPageWebPath());
+
+        if (cmsPage1 != null) {
+            return this.update(cmsPage1.getPageId(), cmsPage);
+        } else {
+            return this.add(cmsPage);
+        }
+
+
+    }
 }
