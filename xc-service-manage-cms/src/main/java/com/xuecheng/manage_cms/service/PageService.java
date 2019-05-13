@@ -69,6 +69,13 @@ public class PageService {
     @Autowired
     private RabbitTemplate rabbitTemplate;
 
+    /**
+     * 页面列表分页查询
+     * @param page 当前页码
+     * @param size 页面显示个数
+     * @param queryPageRequest 查询条件
+     * @return 页面列表
+     */
     public QueryResponseResult findList(int page, int size, QueryPageRequest queryPageRequest) {
         if (queryPageRequest == null) {
             queryPageRequest = new QueryPageRequest();
@@ -156,6 +163,8 @@ public class PageService {
             one.setPageWebPath(cmsPage.getPageWebPath());
             //更新物理路径
             one.setPagePhysicalPath(cmsPage.getPagePhysicalPath());
+
+            one.setDataUrl(cmsPage.getDataUrl());
             //执行更新
             CmsPage save = cmsPageRepository.save(one);
             if (save != null) {
@@ -248,7 +257,7 @@ public class PageService {
 
             GridFsResource gridFsResource = new GridFsResource(gridFSFile, gridFSDownloadStream);
             try {
-                String content = IOUtils.toString(gridFsResource.getInputStream(), "utf‐8");
+                String content = IOUtils.toString(gridFsResource.getInputStream(), "UTF-8");
                 return content;
             } catch (IOException e) {
                 e.printStackTrace();
