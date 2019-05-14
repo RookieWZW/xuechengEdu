@@ -11,6 +11,7 @@ import com.github.pagehelper.Page;
  */
 @Mapper
 public interface CourseMapper {
+
    CourseBase findCourseBaseById(String id);
 
    Page<CourseInfo> findCourseListPage(CourseListRequest courseListRequest);

@@ -59,7 +59,7 @@ public class PageService {
         String sitePhysicalPath = cmsSite.getSitePhysicalPath();
 
 
-        String pagePath = sitePhysicalPath + cmsPage.getPagePhysicalPath();
+        String pagePath = cmsPage.getPagePhysicalPath()+cmsPage.getPageName();
 
         FileOutputStream fileOutputStream = null;
 

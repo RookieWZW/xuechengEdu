@@ -83,66 +83,71 @@ public class CourseService {
 
     @Transactional
     public ResponseResult addTeachplan(Teachplan teachplan) {
-
         if (teachplan == null ||
                 StringUtils.isEmpty(teachplan.getPname()) ||
                 StringUtils.isEmpty(teachplan.getCourseid())) {
             ExceptionCast.cast(CommonCode.INVALID_PARAM);
         }
-        //课程id
-        String courseid = teachplan.getCourseid();
-        //父结点的id
-        String parentid = teachplan.getParentid();
-        if (StringUtils.isEmpty(parentid)) {
-            //获取课程的根结点
-            parentid = getTeachplanRoot(courseid);
+
+        String courseId = teachplan.getCourseid();
+
+        String parentId = teachplan.getParentid();
+
+        if (StringUtils.isEmpty(parentId)) {
+            parentId = getTeachplanRoot(courseId);
+
         }
-        //查询根结点信息
-        Optional<Teachplan> optional = teachplanRepository.findById(parentid);
+        Optional<Teachplan> optional = teachplanRepository.findById(parentId);
         Teachplan teachplan1 = optional.get();
-        //父结点的级别
+
         String parent_grade = teachplan1.getGrade();
-        //创建一个新结点准备添加
+
         Teachplan teachplanNew = new Teachplan();
-        //将teachplan的属性拷贝到teachplanNew中
+
         BeanUtils.copyProperties(teachplan, teachplanNew);
-        //要设置必要的属性
-        teachplanNew.setParentid(parentid);
+
+        teachplanNew.setParentid(parentId);
         if (parent_grade.equals("1")) {
             teachplanNew.setGrade("2");
         } else {
             teachplanNew.setGrade("3");
         }
-        teachplanNew.setStatus("0");//未发布
+
+        teachplanNew.setStatus(teachplan.getStatus());
         teachplanRepository.save(teachplanNew);
+
         return new ResponseResult(CommonCode.SUCCESS);
     }
 
-    //获取课程的根结点
     public String getTeachplanRoot(String courseId) {
         Optional<CourseBase> optional = courseBaseRepository.findById(courseId);
+
         if (!optional.isPresent()) {
             return null;
         }
+
         CourseBase courseBase = optional.get();
-        //调用dao查询teachplan表得到该课程的根结点（一级结点）
+
         List<Teachplan> teachplanList = teachplanRepository.findByCourseidAndParentid(courseId, "0");
         if (teachplanList == null || teachplanList.size() <= 0) {
-            //新添加一个课程的根结点
             Teachplan teachplan = new Teachplan();
+
             teachplan.setCourseid(courseId);
+
             teachplan.setParentid("0");
-            teachplan.setGrade("1");//一级结点
+
+            teachplan.setGrade("1");
+
             teachplan.setStatus("0");
             teachplan.setPname(courseBase.getName());
+
             teachplanRepository.save(teachplan);
+
             return teachplan.getId();
-
         }
-        //返回根结点的id
         return teachplanList.get(0).getId();
-
     }
+
 
     public QueryResponseResult findCourseList(int page, int size, CourseListRequest courseListRequest) {
 
@@ -208,7 +213,7 @@ public class CourseService {
 
     public CourseMarket getCourseMarketById(String courseId) {
         Optional<CourseMarket> optional = courseMarketRepository.findById(courseId);
-        if (!optional.isPresent()) {
+        if (optional.isPresent()) {
             return optional.get();
         }
         return null;

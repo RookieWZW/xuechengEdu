@@ -19,7 +19,7 @@ import io.swagger.annotations.ApiOperation;
 import org.springframework.web.bind.annotation.PathVariable;
 
 /**
- * Created by Administrator.
+ * Created by RookieWZW.
  */
 
 @Api(value = "课程管理接口", description = "课程管理接口，提供课程的增、删、改、查")
