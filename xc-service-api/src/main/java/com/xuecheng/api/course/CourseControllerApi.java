@@ -25,38 +25,16 @@ import org.springframework.web.bind.annotation.PathVariable;
 @Api(value = "课程管理接口", description = "课程管理接口，提供课程的增、删、改、查")
 public interface CourseControllerApi {
 
-
     @ApiOperation("课程计划查询")
     public TeachplanNode findTeachplanList(String courseId);
 
     @ApiOperation("添加课程计划")
     public ResponseResult addTeachplan(Teachplan teachplan);
 
-    @ApiOperation("分页查询课程")
-    public QueryResponseResult findCourseList(@PathVariable(name = "page") int page,
-                                              @PathVariable("size") int size,
-                                              CourseListRequest courseListRequest);
-
-    @ApiOperation("添加课程基础信息")
-    public AddCourseResult addCourseBase(CourseBase courseBase);
-
-    @ApiOperation("获取课程基础信息")
-    public CourseBase getCourseBaseById(String courseId) throws RuntimeException;
-
-
-    @ApiOperation("更新课程基础信息")
-    public ResponseResult updateCourseBase(String id, CourseBase courseBase);
-
-    @ApiOperation("获取课程营销信息")
-    public CourseMarket getCourseMarketById(String courseId);
-
-    @ApiOperation("更新课程营销信息")
-    public ResponseResult updateCourseMarket(String id, CourseMarket courseMarket);
-
     @ApiOperation("添加课程图片")
-    public ResponseResult addCoursePic(String courseId, String pic);
+    public ResponseResult addCoursePic(String courseId,String pic);
 
-    @ApiOperation("获取课程基础信息")
+    @ApiOperation("查询课程图片")
     public CoursePic findCoursePic(String courseId);
 
     @ApiOperation("删除课程图片")
@@ -65,6 +43,9 @@ public interface CourseControllerApi {
     @ApiOperation("课程视图查询")
     public CourseView courseview(String id);
 
-    @ApiOperation("预览课程")
+    @ApiOperation("课程预览")
     public CoursePublishResult preview(String id);
+
+    @ApiOperation("课程发布")
+    public CoursePublishResult publish(String id);
 }

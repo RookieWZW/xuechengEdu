@@ -17,11 +17,9 @@ import java.io.Serializable;
 @NoArgsConstructor
 public class CourseView implements Serializable {
 
-    CourseBase courseBase;
-    CourseMarket courseMarket;
-
-    CoursePic coursePic;
-
-    TeachplanNode teachplanNode;
+    CourseBase courseBase;//基础信息
+    CourseMarket courseMarket;//课程营销
+    CoursePic coursePic;//课程图片
+    TeachplanNode TeachplanNode;//教学计划
 
 }

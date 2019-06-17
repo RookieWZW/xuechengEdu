@@ -5,10 +5,12 @@ import com.mongodb.client.gridfs.GridFSBucket;
 import com.mongodb.client.gridfs.GridFSDownloadStream;
 import com.mongodb.client.gridfs.model.GridFSFile;
 import com.xuecheng.framework.domain.cms.CmsPage;
+import com.xuecheng.framework.domain.cms.CmsSite;
 import com.xuecheng.framework.domain.cms.CmsTemplate;
 import com.xuecheng.framework.domain.cms.request.QueryPageRequest;
 import com.xuecheng.framework.domain.cms.response.CmsCode;
 import com.xuecheng.framework.domain.cms.response.CmsPageResult;
+import com.xuecheng.framework.domain.cms.response.CmsPostPageResult;
 import com.xuecheng.framework.exception.ExceptionCast;
 import com.xuecheng.framework.model.response.CommonCode;
 import com.xuecheng.framework.model.response.QueryResponseResult;
@@ -16,6 +18,7 @@ import com.xuecheng.framework.model.response.QueryResult;
 import com.xuecheng.framework.model.response.ResponseResult;
 import com.xuecheng.manage_cms.config.RabbitmqConfig;
 import com.xuecheng.manage_cms.dao.CmsPageRepository;
+import com.xuecheng.manage_cms.dao.CmsSiteRepository;
 import com.xuecheng.manage_cms.dao.CmsTemplateRepository;
 import freemarker.cache.StringTemplateLoader;
 import freemarker.core.ParseException;
@@ -53,6 +56,8 @@ public class PageService {
     @Autowired
     private CmsPageRepository cmsPageRepository;
 
+    @Autowired
+    private CmsSiteRepository cmsSiteRepository;
 
     @Autowired
     private CmsTemplateRepository cmsTemplateRepository;
@@ -71,8 +76,9 @@ public class PageService {
 
     /**
      * 页面列表分页查询
-     * @param page 当前页码
-     * @param size 页面显示个数
+     *
+     * @param page             当前页码
+     * @param size             页面显示个数
      * @param queryPageRequest 查询条件
      * @return 页面列表
      */
@@ -350,6 +356,49 @@ public class PageService {
             return this.add(cmsPage);
         }
 
+    }
 
+    public CmsPostPageResult postPageQuick(CmsPage cmsPage) {
+        CmsPageResult save = this.save(cmsPage);
+
+        if (!save.isSuccess()) {
+            return new CmsPostPageResult(CommonCode.FAIL, null);
+        }
+
+        CmsPage cmsPage1 = save.getCmsPage();
+
+        String pageId = cmsPage1.getPageId();
+
+        ResponseResult responseResult = this.postPage(pageId);
+        if (!responseResult.isSuccess()) {
+            return new CmsPostPageResult(CommonCode.FAIL, null);
+
+        }
+
+        String siteId = cmsPage1.getSiteId();
+
+        CmsSite cmsSite = findCmsSiteById(siteId);
+
+        String siteDomain = cmsSite.getSiteDomain();
+
+        String siteWebPath = cmsSite.getSiteWebPath();
+
+        String pageWebPath = cmsPage1.getPageWebPath();
+
+        String pageName = cmsPage1.getPageName();
+
+        String pageUrl = siteDomain + siteWebPath + pageWebPath + pageName;
+
+        return new CmsPostPageResult(CommonCode.SUCCESS, pageUrl);
+    }
+
+    public CmsSite findCmsSiteById(String siteId) {
+        Optional<CmsSite> optional = cmsSiteRepository.findById(siteId);
+
+        if (optional.isPresent()) {
+            return optional.get();
+        }
+
+        return null;
     }
 }

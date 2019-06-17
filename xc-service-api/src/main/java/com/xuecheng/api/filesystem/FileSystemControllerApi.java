@@ -9,5 +9,13 @@ import org.springframework.web.multipart.MultipartFile;
 public interface FileSystemControllerApi {
 
 
+    /**
+     * 上传文件
+     * @param multipartFile 文件
+     * @param filetag 文件标签
+     * @param businesskey 业务key
+     * @param metedata 元信息,json格式
+     * @return
+     */
     public UploadFileResult upload(MultipartFile multipartFile,String filetag,String businessKey,String metadata);
 }
