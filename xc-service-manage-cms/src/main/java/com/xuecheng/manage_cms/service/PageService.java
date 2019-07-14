@@ -86,60 +86,64 @@ public class PageService {
         if (queryPageRequest == null) {
             queryPageRequest = new QueryPageRequest();
         }
+
         ExampleMatcher exampleMatcher = ExampleMatcher.matching().
                 withMatcher("pageAliase", ExampleMatcher.GenericPropertyMatchers.contains()).
                 withMatcher("pageName", ExampleMatcher.GenericPropertyMatchers.contains()).
                 withMatcher("pageType", ExampleMatcher.GenericPropertyMatchers.exact());
-
         CmsPage cmsPage = new CmsPage();
 
-        //站点ID
         if (StringUtils.isNotEmpty(queryPageRequest.getSiteId())) {
             cmsPage.setSiteId(queryPageRequest.getSiteId());
         }
-        //页面别名
         if (StringUtils.isNotEmpty(queryPageRequest.getPageAliase())) {
             cmsPage.setPageAliase(queryPageRequest.getPageAliase());
         }
-
         if (StringUtils.isNotEmpty(queryPageRequest.getPageName())) {
             cmsPage.setPageName(queryPageRequest.getPageName());
         }
-
         if (StringUtils.isNotEmpty(queryPageRequest.getPageType())) {
             cmsPage.setPageType(queryPageRequest.getPageType());
         }
+
         Example<CmsPage> example = Example.of(cmsPage, exampleMatcher);
 
         if (page <= 0) {
             page = 1;
         }
         page = page - 1;
+
         if (size <= 0) {
             size = 20;
         }
 
         Pageable pageable = new PageRequest(page, size);
 
-
         Page<CmsPage> all = cmsPageRepository.findAll(example, pageable);
 
-        QueryResult<CmsPage> cmsPageQueryResult = new QueryResult<CmsPage>();
+        QueryResult<CmsPage> cmsPageQueryResult = new QueryResult<>();
 
         cmsPageQueryResult.setList(all.getContent());
 
         cmsPageQueryResult.setTotal(all.getTotalElements());
 
-
         return new QueryResponseResult(CommonCode.SUCCESS, cmsPageQueryResult);
     }
 
 
+    /**
+     * 添加页面
+     *
+     * @param cmsPage
+     * @return
+     */
     public CmsPageResult add(CmsPage cmsPage) {
+        //检验页面是否存在
         CmsPage cmsPage1 = cmsPageRepository.findByPageNameAndSiteIdAndPageWebPath(cmsPage.getPageName(), cmsPage.getSiteId(), cmsPage.getPageWebPath());
         if (cmsPage1 == null) {
             cmsPage.setPageId(null);
             cmsPageRepository.save(cmsPage);
+            //返回结果
             return new CmsPageResult(CommonCode.SUCCESS, cmsPage);
         } else {
             ExceptionCast.cast(CmsCode.CMS_ADDPAGE_EXISTS);
@@ -190,6 +194,7 @@ public class PageService {
         return new ResponseResult(CommonCode.FAIL);
     }
 
+    //页面静态化
     public String getPageHtml(String pageId) {
         Map model = this.getModelByPageId(pageId);
 
@@ -200,38 +205,31 @@ public class PageService {
         if (StringUtils.isEmpty(templateContent)) {
             ExceptionCast.cast(CmsCode.CMS_GENERATEHTML_TEMPLATEISNULL);
         }
-
         String html = generateHtml(templateContent, model);
-        if (StringUtils.isEmpty(html)) {
+        if (!StringUtils.isNotEmpty(html)) {
             ExceptionCast.cast(CmsCode.CMS_GENERATEHTML_HTMLISNULL);
         }
         return html;
     }
 
+    //页面静态化
     public String generateHtml(String template, Map model) {
         try {
+            //生成配置类
             Configuration configuration = new Configuration(Configuration.getVersion());
-
+            //模板加载器
             StringTemplateLoader stringTemplateLoader = new StringTemplateLoader();
 
             stringTemplateLoader.putTemplate("template", template);
-
+            //配置模板加载器
             configuration.setTemplateLoader(stringTemplateLoader);
 
+            //获取模板
             Template template1 = configuration.getTemplate("template");
 
             String html = FreeMarkerTemplateUtils.processTemplateIntoString(template1, model);
-
             return html;
-        } catch (MalformedTemplateNameException e) {
-            e.printStackTrace();
-        } catch (ParseException e) {
-            e.printStackTrace();
-        } catch (TemplateNotFoundException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-        } catch (TemplateException e) {
+        } catch (Exception e) {
             e.printStackTrace();
         }
         return null;
@@ -274,22 +272,22 @@ public class PageService {
 
     }
 
+    //获取页面模型数据
     public Map getModelByPageId(String pageId) {
         CmsPage cmsPage = this.getById(pageId);
+
         if (cmsPage == null) {
             ExceptionCast.cast(CmsCode.CMS_PAGE_NOTEXISTS);
         }
         String dataUrl = cmsPage.getDataUrl();
-
         if (StringUtils.isEmpty(dataUrl)) {
             ExceptionCast.cast(CmsCode.CMS_GENERATEHTML_DATAURLISNULL);
         }
-
         ResponseEntity<Map> forEntity = restTemplate.getForEntity(dataUrl, Map.class);
-
         Map body = forEntity.getBody();
-
         return body;
+
+
     }
 
     public ResponseResult postPage(String pageId) {

@@ -33,7 +33,7 @@ public class ExceptionCatch {
         ResultCode resultCode = customException.getResultCode();
         return new ResponseResult(resultCode);
     }
-    //捕获Exception此类异常
+//    //捕获Exception此类异常
 //    @ExceptionHandler(Exception.class)
 //    @ResponseBody
 //    public ResponseResult exception(Exception exception){
