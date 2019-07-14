@@ -2,62 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="de11e803-1df2-442f-be7f-c07cf3b3fdcc" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_carrotsearch_hppc_0_7_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_dataformat_jackson_dataformat_cbor_2_9_5.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_dataformat_jackson_dataformat_smile_2_9_5.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_dataformat_jackson_dataformat_yaml_2_9_5.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_tdunning_t_digest_3_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_1_3_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_sf_jopt_simple_jopt_simple_5_0_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_analyzers_common_7_2_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_backward_codecs_7_2_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_core_7_2_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_grouping_7_2_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_highlighter_7_2_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_join_7_2_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_memory_7_2_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_misc_7_2_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_queries_7_2_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_queryparser_7_2_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_sandbox_7_2_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_spatial3d_7_2_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_spatial_7_2_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_spatial_extras_7_2_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_suggest_7_2_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_elasticsearch_elasticsearch_cli_6_2_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_elasticsearch_elasticsearch_core_6_2_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_elasticsearch_securesm_1_2.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_io_1_3_2.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/xc-service-manage-course/target/classes/com/xuecheng/manage_course/controller/CourseController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/xc-service-manage-course/target/classes/com/xuecheng/manage_course/service/CourseService.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xc-service-api/target/classes/com/xuecheng/api/cms/CmsPageControllerApi.class" afterPath="$PROJECT_DIR$/xc-service-api/target/classes/com/xuecheng/api/cms/CmsPageControllerApi.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xc-service-manage-cms-client/target/classes/com/xuecheng/manage_cms_client/config/RabbitmqConfig.class" afterPath="$PROJECT_DIR$/xc-service-manage-cms-client/target/classes/com/xuecheng/manage_cms_client/config/RabbitmqConfig.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xc-service-manage-cms-client/target/classes/com/xuecheng/manage_cms_client/mq/ConsumerPostPage.class" afterPath="$PROJECT_DIR$/xc-service-manage-cms-client/target/classes/com/xuecheng/manage_cms_client/mq/ConsumerPostPage.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xc-service-manage-cms-client/target/classes/com/xuecheng/manage_cms_client/service/PageService.class" afterPath="$PROJECT_DIR$/xc-service-manage-cms-client/target/classes/com/xuecheng/manage_cms_client/service/PageService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xc-service-manage-cms/target/classes/com/xuecheng/manage_cms/config/MongoConfig.class" afterPath="$PROJECT_DIR$/xc-service-manage-cms/target/classes/com/xuecheng/manage_cms/config/MongoConfig.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xc-service-manage-cms/target/classes/com/xuecheng/manage_cms/service/PageService.class" afterPath="$PROJECT_DIR$/xc-service-manage-cms/target/classes/com/xuecheng/manage_cms/service/PageService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xc-service-manage-cms/target/test-classes/com/xuecheng/manage_cms/GridFsTest.class" afterPath="$PROJECT_DIR$/xc-service-manage-cms/target/test-classes/com/xuecheng/manage_cms/GridFsTest.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xc-framework-common/src/main/java/com/xuecheng/framework/exception/CustomException.java" afterPath="$PROJECT_DIR$/xc-framework-common/src/main/java/com/xuecheng/framework/exception/CustomException.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xc-framework-common/src/main/java/com/xuecheng/framework/exception/ExceptionCatch.java" afterPath="$PROJECT_DIR$/xc-framework-common/src/main/java/com/xuecheng/framework/exception/ExceptionCatch.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xc-govern-center/src/main/resources/application.yml" afterPath="$PROJECT_DIR$/xc-govern-center/src/main/resources/application.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xc-govern-center/target/classes/application.yml" afterPath="$PROJECT_DIR$/xc-govern-center/target/classes/application.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xc-service-api/src/main/java/com/xuecheng/api/cms/CmsPageControllerApi.java" afterPath="$PROJECT_DIR$/xc-service-api/src/main/java/com/xuecheng/api/cms/CmsPageControllerApi.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xc-service-api/src/main/java/com/xuecheng/api/course/CourseControllerApi.java" afterPath="$PROJECT_DIR$/xc-service-api/src/main/java/com/xuecheng/api/course/CourseControllerApi.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xc-service-base-filesystem/xc-service-base-filesystem.iml" afterPath="$PROJECT_DIR$/xc-service-base-filesystem/xc-service-base-filesystem.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xc-service-manage-cms-client/src/main/java/com/xuecheng/manage_cms_client/config/RabbitmqConfig.java" afterPath="$PROJECT_DIR$/xc-service-manage-cms-client/src/main/java/com/xuecheng/manage_cms_client/config/RabbitmqConfig.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xc-service-manage-cms-client/src/main/java/com/xuecheng/manage_cms_client/mq/ConsumerPostPage.java" afterPath="$PROJECT_DIR$/xc-service-manage-cms-client/src/main/java/com/xuecheng/manage_cms_client/mq/ConsumerPostPage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xc-service-manage-cms-client/src/main/java/com/xuecheng/manage_cms_client/service/PageService.java" afterPath="$PROJECT_DIR$/xc-service-manage-cms-client/src/main/java/com/xuecheng/manage_cms_client/service/PageService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xc-service-manage-cms-client/xc-service-manage-cms-client.iml" afterPath="$PROJECT_DIR$/xc-service-manage-cms-client/xc-service-manage-cms-client.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xc-service-manage-cms/src/main/java/com/xuecheng/manage_cms/config/MongoConfig.java" afterPath="$PROJECT_DIR$/xc-service-manage-cms/src/main/java/com/xuecheng/manage_cms/config/MongoConfig.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xc-service-manage-cms/src/main/java/com/xuecheng/manage_cms/dao/CmsPageRepository.java" afterPath="$PROJECT_DIR$/xc-service-manage-cms/src/main/java/com/xuecheng/manage_cms/dao/CmsPageRepository.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xc-service-manage-cms/src/main/java/com/xuecheng/manage_cms/service/PageService.java" afterPath="$PROJECT_DIR$/xc-service-manage-cms/src/main/java/com/xuecheng/manage_cms/service/PageService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xc-service-manage-cms/src/test/java/com/xuecheng/manage_cms/GridFsTest.java" afterPath="$PROJECT_DIR$/xc-service-manage-cms/src/test/java/com/xuecheng/manage_cms/GridFsTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xc-service-manage-course/src/main/java/com/xuecheng/manage_course/controller/CourseController.java" afterPath="$PROJECT_DIR$/xc-service-manage-course/src/main/java/com/xuecheng/manage_course/controller/CourseController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xc-service-manage-course/src/main/java/com/xuecheng/manage_course/service/CourseService.java" afterPath="$PROJECT_DIR$/xc-service-manage-course/src/main/java/com/xuecheng/manage_course/service/CourseService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xc-service-manage-course/src/main/resources/com/xuecheng/manage_course/dao/TeachplanMapper.xml" afterPath="$PROJECT_DIR$/xc-service-manage-course/src/main/resources/com/xuecheng/manage_course/dao/TeachplanMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xc-service-manage-course/target/classes/com/xuecheng/manage_course/dao/TeachplanMapper.xml" afterPath="$PROJECT_DIR$/xc-service-manage-course/target/classes/com/xuecheng/manage_course/dao/TeachplanMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xc-service-search/xc-service-search.iml" afterPath="$PROJECT_DIR$/xc-service-search/xc-service-search.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xc-service-base-filesystem/src/main/resources/application.yml" afterPath="$PROJECT_DIR$/xc-service-base-filesystem/src/main/resources/application.yml" />
     </list>
     <ignored path="$PROJECT_DIR$/xc-framework-parent/target/" />
     <ignored path="$PROJECT_DIR$/xc-framework-common/target/" />
@@ -96,41 +42,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="SysDictionary.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/xc-framework-model/src/main/java/com/xuecheng/framework/domain/system/SysDictionary.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="19" column="7" lean-forward="true" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SysDictionaryControllerApi.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/xc-service-api/src/main/java/com/xuecheng/api/cms/SysDictionaryControllerApi.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="183">
-              <caret line="10" column="17" lean-forward="false" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SysDictionaryController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/xc-service-manage-cms/src/main/java/com/xuecheng/manage_cms/web/controller/SysDictionaryController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="18" column="14" lean-forward="true" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="CourseControllerApi.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/xc-service-api/src/main/java/com/xuecheng/api/course/CourseControllerApi.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="60" column="0" lean-forward="true" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
+            <state relative-caret-position="287">
+              <caret line="54" column="0" lean-forward="true" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CoursePic.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/xc-framework-model/src/main/java/com/xuecheng/framework/domain/course/CoursePic.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="18" column="24" lean-forward="false" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -146,21 +72,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AddCourseResult.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/xc-framework-model/src/main/java/com/xuecheng/framework/domain/course/response/AddCourseResult.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="CourseController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/xc-service-manage-course/src/main/java/com/xuecheng/manage_course/controller/CourseController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="123" column="0" lean-forward="true" selection-start-line="123" selection-start-column="0" selection-end-line="123" selection-end-column="0" />
+            <state relative-caret-position="-583">
+              <caret line="51" column="75" lean-forward="true" selection-start-line="51" selection-start-column="75" selection-end-line="51" selection-end-column="75" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -168,21 +84,51 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CourseMarket.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/xc-framework-model/src/main/java/com/xuecheng/framework/domain/course/CourseMarket.java">
+      <file leaf-file-name="application.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/xc-service-base-filesystem/src/main/resources/application.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="31" column="12" lean-forward="false" selection-start-line="31" selection-start-column="12" selection-end-line="31" selection-end-column="12" />
+            <state relative-caret-position="157">
+              <caret line="22" column="28" lean-forward="true" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CourseBaseRepository.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/xc-service-manage-course/src/main/java/com/xuecheng/manage_course/dao/CourseBaseRepository.java">
+      <file leaf-file-name="FileSystemControllerApi.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/xc-service-api/src/main/java/com/xuecheng/api/filesystem/FileSystemControllerApi.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
-              <caret line="8" column="17" lean-forward="false" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+            <state relative-caret-position="135">
+              <caret line="15" column="31" lean-forward="true" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FileSystemRepository.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/xc-service-base-filesystem/src/main/java/com/xuecheng/filesystem/dao/FileSystemRepository.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="161">
+              <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FileSystemService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/xc-service-base-filesystem/src/main/java/com/xuecheng/filesystem/service/FileSystemService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="83" column="0" lean-forward="false" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FileSystemController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/xc-service-base-filesystem/src/main/java/com/xuecheng/filesystem/controller/FileSystemController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-122">
+              <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -191,7 +137,7 @@
       <file leaf-file-name="CourseService.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/xc-service-manage-course/src/main/java/com/xuecheng/manage_course/service/CourseService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
+            <state relative-caret-position="6891">
               <caret line="428" column="82" lean-forward="false" selection-start-line="428" selection-start-column="82" selection-end-line="428" selection-end-column="82" />
               <folding>
                 <element signature="e#3703#3704#0" expanded="true" />
@@ -238,7 +184,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/xc-framework-model/src/main/java/com/xuecheng/framework/domain/course/ext/CourseView.java" />
         <option value="$PROJECT_DIR$/xc-service-manage-cms/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/xc-framework-common/src/test/java/FPTree/trolley.txt" />
         <option value="$PROJECT_DIR$/xc-framework-common/src/test/java/FPTree/FPTree.java" />
@@ -286,9 +231,10 @@
         <option value="$PROJECT_DIR$/xc-service-manage-cms/src/test/java/com/xuecheng/manage_cms/GridFsTest.java" />
         <option value="$PROJECT_DIR$/xc-service-manage-course/src/main/resources/com/xuecheng/manage_course/dao/TeachplanMapper.xml" />
         <option value="$PROJECT_DIR$/xc-service-manage-course/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/xc-service-api/src/main/java/com/xuecheng/api/course/CourseControllerApi.java" />
         <option value="$PROJECT_DIR$/xc-service-manage-course/src/main/java/com/xuecheng/manage_course/service/CourseService.java" />
         <option value="$PROJECT_DIR$/xc-service-manage-course/src/main/java/com/xuecheng/manage_course/controller/CourseController.java" />
+        <option value="$PROJECT_DIR$/xc-service-base-filesystem/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/xc-service-api/src/main/java/com/xuecheng/api/course/CourseControllerApi.java" />
       </list>
     </option>
   </component>
@@ -329,7 +275,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
     <option name="x" value="692" />
     <option name="y" value="17" />
     <option name="width" value="697" />
@@ -363,70 +309,25 @@
             <path>
               <item name="xuecheng" type="b2602c69:ProjectViewProjectNode" />
               <item name="xuecheng" type="462c0819:PsiDirectoryNode" />
-              <item name="xc-service-api" type="462c0819:PsiDirectoryNode" />
+              <item name="xc-service-base-filesystem" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="xuecheng" type="b2602c69:ProjectViewProjectNode" />
               <item name="xuecheng" type="462c0819:PsiDirectoryNode" />
-              <item name="xc-service-api" type="462c0819:PsiDirectoryNode" />
+              <item name="xc-service-base-filesystem" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="xuecheng" type="b2602c69:ProjectViewProjectNode" />
               <item name="xuecheng" type="462c0819:PsiDirectoryNode" />
-              <item name="xc-service-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xuecheng" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xuecheng" type="462c0819:PsiDirectoryNode" />
-              <item name="xc-service-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xuecheng" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xuecheng" type="462c0819:PsiDirectoryNode" />
-              <item name="xc-service-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xuecheng" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xuecheng" type="462c0819:PsiDirectoryNode" />
-              <item name="xc-service-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-              <item name="course" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xuecheng" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xuecheng" type="462c0819:PsiDirectoryNode" />
-              <item name="xc-service-manage-course" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xuecheng" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xuecheng" type="462c0819:PsiDirectoryNode" />
-              <item name="xc-service-manage-course" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xuecheng" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xuecheng" type="462c0819:PsiDirectoryNode" />
-              <item name="xc-service-manage-course" type="462c0819:PsiDirectoryNode" />
+              <item name="xc-service-base-filesystem" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="xuecheng" type="b2602c69:ProjectViewProjectNode" />
               <item name="xuecheng" type="462c0819:PsiDirectoryNode" />
-              <item name="xc-service-manage-course" type="462c0819:PsiDirectoryNode" />
+              <item name="xc-service-base-filesystem" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -434,58 +335,29 @@
             <path>
               <item name="xuecheng" type="b2602c69:ProjectViewProjectNode" />
               <item name="xuecheng" type="462c0819:PsiDirectoryNode" />
-              <item name="xc-service-manage-course" type="462c0819:PsiDirectoryNode" />
+              <item name="xc-service-base-filesystem" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="manage_course" type="462c0819:PsiDirectoryNode" />
+              <item name="filesystem" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="xuecheng" type="b2602c69:ProjectViewProjectNode" />
               <item name="xuecheng" type="462c0819:PsiDirectoryNode" />
-              <item name="xc-service-manage-course" type="462c0819:PsiDirectoryNode" />
+              <item name="xc-service-base-filesystem" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="manage_course" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xuecheng" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xuecheng" type="462c0819:PsiDirectoryNode" />
-              <item name="xc-service-manage-course" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="manage_course" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xuecheng" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xuecheng" type="462c0819:PsiDirectoryNode" />
-              <item name="xc-service-manage-course" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="manage_course" type="462c0819:PsiDirectoryNode" />
+              <item name="filesystem" type="462c0819:PsiDirectoryNode" />
               <item name="service" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="xuecheng" type="b2602c69:ProjectViewProjectNode" />
               <item name="xuecheng" type="462c0819:PsiDirectoryNode" />
-              <item name="xc-service-manage-course" type="462c0819:PsiDirectoryNode" />
+              <item name="xc-service-base-filesystem" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xuecheng" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xuecheng" type="462c0819:PsiDirectoryNode" />
-              <item name="xc-service-manage-course" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -513,7 +385,7 @@
     <property name="RequestMappingsPanelWidth2" value="75" />
     <property name="RequestMappingsPanelOrder2" value="2" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
-    <property name="SearchEverywhereHistoryKey" value="CourseServ&#9;FILE&#9;file://F:/xuecheng/xuecheng/xc-service-manage-course/src/main/java/com/xuecheng/manage_course/service/CourseService.java&#10;CourseMar&#9;PSI&#9;JAVA://com.xuecheng.manage_course.dao.CourseMarketRepository&#10;api&#9;FILE&#9;file://F:/xuecheng/xuecheng/xc-service-api/src/main/java/com/xuecheng/api/course/CourseControllerApi.java&#10;CourseMark&#9;PSI&#9;JAVA://com.xuecheng.framework.domain.course.CourseMarket&#10;CourseCo&#9;FILE&#9;file://F:/xuecheng/xuecheng/xc-service-api/src/main/java/com/xuecheng/api/course/CourseControllerApi.java&#10;CourseService&#9;FILE&#9;file://F:/xuecheng/xuecheng/xc-service-manage-course/src/main/java/com/xuecheng/manage_course/service/CourseService.java&#10;CourseBase&#9;PSI&#9;JAVA://com.xuecheng.manage_course.dao.CourseBaseRepository&#10;CourseControllerAp&#9;FILE&#9;file://F:/xuecheng/xuecheng/xc-service-api/src/main/java/com/xuecheng/api/course/CourseControllerApi.java&#10;SysAp&#9;PSI&#9;JAVA://com.xuecheng.api.cms.SysDictionaryControllerApi&#10;SysDi&#9;PSI&#9;JAVA://com.xuecheng.framework.domain.system.SysDictionary&#10;CategoryAp&#9;PSI&#9;JAVA://com.xuecheng.api.course.CategoryControllerApi&#10;CategoryNo&#9;PSI&#9;JAVA://com.xuecheng.framework.domain.course.ext.CategoryNode&#10;Category&#9;PSI&#9;JAVA://com.xuecheng.framework.domain.course.Category&#10;CourseCont&#9;FILE&#9;file://F:/xuecheng/xuecheng/xc-service-manage-course/src/main/java/com/xuecheng/manage_course/controller/CourseController.java&#10;CourseSer&#9;FILE&#9;file://F:/xuecheng/xuecheng/xc-service-manage-course/src/main/java/com/xuecheng/manage_course/service/CourseService.java&#10;CourseMapper&#9;PSI&#9;JAVA://com.xuecheng.manage_course.dao.CourseMapper&#10;CourseContr&#9;FILE&#9;file://F:/xuecheng/xuecheng/xc-service-api/src/main/java/com/xuecheng/api/course/CourseControllerApi.java&#10;TeachRe&#9;PSI&#9;JAVA://com.xuecheng.manage_course.dao.TeachplanRepository&#10;CourseCon&#9;PSI&#9;JAVA://com.xuecheng.manage_course.controller.CourseController&#10;Cour&#9;FILE&#9;file://F:/xuecheng/xuecheng/xc-service-manage-course/src/main/java/com/xuecheng/manage_course/service/CourseService.java&#10;courseSer&#9;PSI&#9;JAVA://com.xuecheng.manage_course.service.CourseService&#10;TeachMapp&#9;PSI&#9;JAVA://com.xuecheng.manage_course.dao.TeachplanMapper&#10;CourseAp&#9;PSI&#9;JAVA://com.xuecheng.api.course.CourseControllerApi&#10;TeachNode&#9;PSI&#9;JAVA://com.xuecheng.framework.domain.course.ext.TeachplanNode&#10;TeachPlan&#9;PSI&#9;JAVA://com.xuecheng.framework.domain.course.Teachplan&#10;Exce&#9;PSI&#9;JAVA://com.xuecheng.framework.exception.ExceptionCast&#10;CmsPageCon&#9;FILE&#9;file://F:/xuecheng/xuecheng/xc-service-manage-cms/src/main/java/com/xuecheng/manage_cms/web/controller/CmsPageController.java&#10;CmsPagAp&#9;FILE&#9;file://F:/xuecheng/xuecheng/xc-service-api/src/main/java/com/xuecheng/api/cms/CmsPageControllerApi.java&#10;pageSer&#9;FILE&#9;file://F:/xuecheng/xuecheng/xc-service-manage-cms/src/main/java/com/xuecheng/manage_cms/service/PageService.java&#10;PageServce&#9;null&#9;null&#10;CmsPageRe&#9;FILE&#9;file://F:/xuecheng/xuecheng/xc-service-manage-cms/src/main/java/com/xuecheng/manage_cms/dao/CmsPageRepository.java&#10;CmsPagePre&#9;FILE&#9;file://F:/xuecheng/xuecheng/xc-service-manage-cms/src/main/java/com/xuecheng/manage_cms/web/controller/CmsPagePreviewController.java&#10;CmsPageContr&#9;FILE&#9;file://F:/xuecheng/xuecheng/xc-service-api/src/main/java/com/xuecheng/api/cms/CmsPageControllerApi.java&#10;PageService&#9;FILE&#9;file://F:/xuecheng/xuecheng/xc-service-manage-cms/src/main/java/com/xuecheng/manage_cms/service/PageService.java&#10;Gr&#9;PSI&#9;JAVA://com.xuecheng.manage_cms.GridFsTest&#10;Mongo&#9;PSI&#9;JAVA://com.xuecheng.manage_cms.config.MongoConfig&#10;Application&#9;FILE&#9;file://F:/xuecheng/xuecheng/xc-service-manage-cms/src/main/java/com/xuecheng/manage_cms/ManageCmsApplication.java&#10;CmsContr&#9;FILE&#9;file://F:/xuecheng/xuecheng/xc-service-api/src/main/java/com/xuecheng/api/cms/CmsConfigControllerApi.java&#10;CmsConfigSe&#9;PSI&#9;JAVA://com.xuecheng.manage_cms.service.CmsConfigService&#10;CmsConfigRe&#9;PSI&#9;JAVA://com.xuecheng.manage_cms.dao.CmsConfigRepository&#10;CmsConfig&#9;FILE&#9;file://F:/xuecheng/xuecheng/xc-framework-model/src/main/java/com/xuecheng/framework/domain/cms/CmsConfig.java&#10;CmsConfigCon&#9;FILE&#9;file://F:/xuecheng/xuecheng/xc-service-manage-cms/src/main/java/com/xuecheng/manage_cms/web/controller/CmsConfigController.java&#10;CmsCOnfig&#9;PSI&#9;JAVA://com.xuecheng.framework.domain.cms.CmsConfigModel&#10;Exc&#9;FILE&#9;file://F:/xuecheng/xuecheng/xc-framework-common/src/main/java/com/xuecheng/framework/exception/ExceptionCatch.java&#10;Cast&#9;FILE&#9;file://F:/xuecheng/xuecheng/xc-framework-common/src/main/java/com/xuecheng/framework/exception/ExceptionCast.java&#10;PageSer&#9;FILE&#9;file://F:/xuecheng/xuecheng/xc-service-manage-cms/src/main/java/com/xuecheng/manage_cms/service/PageService.java&#10;CmsCode&#9;PSI&#9;JAVA://com.xuecheng.framework.domain.cms.response.CmsCode&#10;ExceCa&#9;PSI&#9;JAVA://com.xuecheng.framework.exception.ExceptionCatch&#10;Exca&#9;PSI&#9;JAVA://com.xuecheng.framework.exception.ExceptionCast&#10;Cust&#9;PSI&#9;JAVA://com.xuecheng.framework.exception.CustomException" />
+    <property name="SearchEverywhereHistoryKey" value="CourseCon&#9;FILE&#9;file://F:/xuecheng/xuecheng/xc-service-manage-course/src/main/java/com/xuecheng/manage_course/controller/CourseController.java&#10;CourseService&#9;FILE&#9;file://F:/xuecheng/xuecheng/xc-service-manage-course/src/main/java/com/xuecheng/manage_course/service/CourseService.java&#10;CoursePic&#9;PSI&#9;JAVA://com.xuecheng.framework.domain.course.CoursePic&#10;CourseAp&#9;FILE&#9;file://F:/xuecheng/xuecheng/xc-service-api/src/main/java/com/xuecheng/api/course/CourseControllerApi.java&#10;FileSySer&#9;PSI&#9;JAVA://com.xuecheng.filesystem.service.FileSystemService&#10;FileRep&#9;PSI&#9;JAVA://com.xuecheng.filesystem.dao.FileSystemRepository&#10;FileApi&#9;PSI&#9;JAVA://com.xuecheng.api.filesystem.FileSystemControllerApi&#10;CourseServ&#9;FILE&#9;file://F:/xuecheng/xuecheng/xc-service-manage-course/src/main/java/com/xuecheng/manage_course/service/CourseService.java&#10;CourseMar&#9;PSI&#9;JAVA://com.xuecheng.manage_course.dao.CourseMarketRepository&#10;api&#9;FILE&#9;file://F:/xuecheng/xuecheng/xc-service-api/src/main/java/com/xuecheng/api/course/CourseControllerApi.java&#10;CourseMark&#9;PSI&#9;JAVA://com.xuecheng.framework.domain.course.CourseMarket&#10;CourseCo&#9;FILE&#9;file://F:/xuecheng/xuecheng/xc-service-api/src/main/java/com/xuecheng/api/course/CourseControllerApi.java&#10;CourseBase&#9;PSI&#9;JAVA://com.xuecheng.manage_course.dao.CourseBaseRepository&#10;CourseControllerAp&#9;FILE&#9;file://F:/xuecheng/xuecheng/xc-service-api/src/main/java/com/xuecheng/api/course/CourseControllerApi.java&#10;SysAp&#9;PSI&#9;JAVA://com.xuecheng.api.cms.SysDictionaryControllerApi&#10;SysDi&#9;PSI&#9;JAVA://com.xuecheng.framework.domain.system.SysDictionary&#10;CategoryAp&#9;PSI&#9;JAVA://com.xuecheng.api.course.CategoryControllerApi&#10;CategoryNo&#9;PSI&#9;JAVA://com.xuecheng.framework.domain.course.ext.CategoryNode&#10;Category&#9;PSI&#9;JAVA://com.xuecheng.framework.domain.course.Category&#10;CourseCont&#9;FILE&#9;file://F:/xuecheng/xuecheng/xc-service-manage-course/src/main/java/com/xuecheng/manage_course/controller/CourseController.java&#10;CourseSer&#9;FILE&#9;file://F:/xuecheng/xuecheng/xc-service-manage-course/src/main/java/com/xuecheng/manage_course/service/CourseService.java&#10;CourseMapper&#9;PSI&#9;JAVA://com.xuecheng.manage_course.dao.CourseMapper&#10;CourseContr&#9;FILE&#9;file://F:/xuecheng/xuecheng/xc-service-api/src/main/java/com/xuecheng/api/course/CourseControllerApi.java&#10;TeachRe&#9;PSI&#9;JAVA://com.xuecheng.manage_course.dao.TeachplanRepository&#10;Cour&#9;FILE&#9;file://F:/xuecheng/xuecheng/xc-service-manage-course/src/main/java/com/xuecheng/manage_course/service/CourseService.java&#10;courseSer&#9;PSI&#9;JAVA://com.xuecheng.manage_course.service.CourseService&#10;TeachMapp&#9;PSI&#9;JAVA://com.xuecheng.manage_course.dao.TeachplanMapper&#10;TeachNode&#9;PSI&#9;JAVA://com.xuecheng.framework.domain.course.ext.TeachplanNode&#10;TeachPlan&#9;PSI&#9;JAVA://com.xuecheng.framework.domain.course.Teachplan&#10;Exce&#9;PSI&#9;JAVA://com.xuecheng.framework.exception.ExceptionCast&#10;CmsPageCon&#9;FILE&#9;file://F:/xuecheng/xuecheng/xc-service-manage-cms/src/main/java/com/xuecheng/manage_cms/web/controller/CmsPageController.java&#10;CmsPagAp&#9;FILE&#9;file://F:/xuecheng/xuecheng/xc-service-api/src/main/java/com/xuecheng/api/cms/CmsPageControllerApi.java&#10;pageSer&#9;FILE&#9;file://F:/xuecheng/xuecheng/xc-service-manage-cms/src/main/java/com/xuecheng/manage_cms/service/PageService.java&#10;PageServce&#9;null&#9;null&#10;CmsPageRe&#9;FILE&#9;file://F:/xuecheng/xuecheng/xc-service-manage-cms/src/main/java/com/xuecheng/manage_cms/dao/CmsPageRepository.java&#10;CmsPagePre&#9;FILE&#9;file://F:/xuecheng/xuecheng/xc-service-manage-cms/src/main/java/com/xuecheng/manage_cms/web/controller/CmsPagePreviewController.java&#10;CmsPageContr&#9;FILE&#9;file://F:/xuecheng/xuecheng/xc-service-api/src/main/java/com/xuecheng/api/cms/CmsPageControllerApi.java&#10;PageService&#9;FILE&#9;file://F:/xuecheng/xuecheng/xc-service-manage-cms/src/main/java/com/xuecheng/manage_cms/service/PageService.java&#10;Gr&#9;PSI&#9;JAVA://com.xuecheng.manage_cms.GridFsTest&#10;Mongo&#9;PSI&#9;JAVA://com.xuecheng.manage_cms.config.MongoConfig&#10;Application&#9;FILE&#9;file://F:/xuecheng/xuecheng/xc-service-manage-cms/src/main/java/com/xuecheng/manage_cms/ManageCmsApplication.java&#10;CmsContr&#9;FILE&#9;file://F:/xuecheng/xuecheng/xc-service-api/src/main/java/com/xuecheng/api/cms/CmsConfigControllerApi.java&#10;CmsConfigSe&#9;PSI&#9;JAVA://com.xuecheng.manage_cms.service.CmsConfigService&#10;CmsConfigRe&#9;PSI&#9;JAVA://com.xuecheng.manage_cms.dao.CmsConfigRepository&#10;CmsConfig&#9;FILE&#9;file://F:/xuecheng/xuecheng/xc-framework-model/src/main/java/com/xuecheng/framework/domain/cms/CmsConfig.java&#10;CmsConfigCon&#9;FILE&#9;file://F:/xuecheng/xuecheng/xc-service-manage-cms/src/main/java/com/xuecheng/manage_cms/web/controller/CmsConfigController.java&#10;CmsCOnfig&#9;PSI&#9;JAVA://com.xuecheng.framework.domain.cms.CmsConfigModel&#10;Exc&#9;FILE&#9;file://F:/xuecheng/xuecheng/xc-framework-common/src/main/java/com/xuecheng/framework/exception/ExceptionCatch.java&#10;Cast&#9;FILE&#9;file://F:/xuecheng/xuecheng/xc-framework-common/src/main/java/com/xuecheng/framework/exception/ExceptionCast.java&#10;PageSer&#9;FILE&#9;file://F:/xuecheng/xuecheng/xc-service-manage-cms/src/main/java/com/xuecheng/manage_cms/service/PageService.java" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/xc-service-search/src/main/java" />
   </component>
   <component name="RecentsManager">
@@ -864,7 +736,7 @@
       <workItem from="1562763255372" duration="1076000" />
       <workItem from="1562773230648" duration="13686000" />
       <workItem from="1562891521371" duration="684000" />
-      <workItem from="1563018658965" duration="14594000" />
+      <workItem from="1563018658965" duration="17080000" />
     </task>
     <servers />
   </component>
@@ -901,7 +773,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="264976000" />
+    <option name="totallyTimeSpent" value="267462000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -913,7 +785,8 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="692" y="17" width="697" height="735" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32098764" sideWeight="0.5086614" order="8" side_tool="true" content_ui="tabs" />
@@ -933,12 +806,12 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32798573" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Run Dashboard" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.40106952" sideWeight="0.48937786" order="6" side_tool="false" content_ui="combo" />
+      <window_info id="Run Dashboard" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4003623" sideWeight="0.48937786" order="6" side_tool="false" content_ui="combo" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.79679143" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.43137255" sideWeight="0.49133858" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32798573" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31746033" sideWeight="0.4849921" order="14" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.48973143" sideWeight="0.48007247" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32608697" sideWeight="0.4849921" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.70300156" sideWeight="0.48007247" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3262032" sideWeight="0.4969651" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.45339653" sideWeight="0.51992756" order="8" side_tool="true" content_ui="tabs" />
@@ -1006,56 +879,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-core/8.5.28/tomcat-embed-core-8.5.28.jar!/org/apache/catalina/connector/Response.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="201" column="0" lean-forward="false" selection-start-line="201" selection-start-column="0" selection-end-line="201" selection-end-column="0" />
-          <folding>
-            <element signature="e#6754#6755#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-core/8.5.28/tomcat-embed-core-8.5.28.jar!/org/apache/catalina/connector/Request.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="478" column="0" lean-forward="false" selection-start-line="478" selection-start-column="0" selection-end-line="478" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-core/8.5.28/tomcat-embed-core-8.5.28.jar!/org/apache/catalina/core/StandardHostValve.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="107">
-          <caret line="72" column="0" lean-forward="false" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-core/8.5.28/tomcat-embed-core-8.5.28.jar!/org/apache/catalina/valves/ErrorReportValve.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="99">
-          <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-core/8.5.28/tomcat-embed-core-8.5.28.jar!/org/apache/catalina/core/StandardEngineValve.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="99">
-          <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-core/8.5.28/tomcat-embed-core-8.5.28.jar!/org/apache/catalina/connector/CoyoteAdapter.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1695">
-          <caret line="329" column="0" lean-forward="false" selection-start-line="329" selection-start-column="0" selection-end-line="329" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-core/8.5.28/tomcat-embed-core-8.5.28.jar!/org/apache/coyote/RequestInfo.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="125">
@@ -1407,14 +1230,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/xc-service-api/src/main/java/com/xuecheng/api/course/CourseControllerApi.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="60" column="0" lean-forward="true" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/xc-service-manage-course/src/main/java/com/xuecheng/manage_course/dao/CourseMarketRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="208">
@@ -1423,9 +1238,65 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/xc-service-base-filesystem/src/main/java/com/xuecheng/filesystem/controller/FileSystemController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-122">
+          <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xc-service-api/src/main/java/com/xuecheng/api/filesystem/FileSystemControllerApi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="15" column="31" lean-forward="true" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xc-service-base-filesystem/src/main/java/com/xuecheng/filesystem/dao/FileSystemRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xc-service-base-filesystem/src/main/java/com/xuecheng/filesystem/service/FileSystemService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="83" column="0" lean-forward="false" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xc-service-base-filesystem/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="22" column="28" lean-forward="true" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xc-service-api/src/main/java/com/xuecheng/api/course/CourseControllerApi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="287">
+          <caret line="54" column="0" lean-forward="true" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xc-framework-model/src/main/java/com/xuecheng/framework/domain/course/CoursePic.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="18" column="24" lean-forward="false" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/xc-service-manage-course/src/main/java/com/xuecheng/manage_course/service/CourseService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
+        <state relative-caret-position="6891">
           <caret line="428" column="82" lean-forward="false" selection-start-line="428" selection-start-column="82" selection-end-line="428" selection-end-column="82" />
           <folding>
             <element signature="e#3703#3704#0" expanded="true" />
@@ -1435,8 +1306,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/xc-service-manage-course/src/main/java/com/xuecheng/manage_course/controller/CourseController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="123" column="0" lean-forward="true" selection-start-line="123" selection-start-column="0" selection-end-line="123" selection-end-column="0" />
+        <state relative-caret-position="-583">
+          <caret line="51" column="75" lean-forward="true" selection-start-line="51" selection-start-column="75" selection-end-line="51" selection-end-column="75" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
